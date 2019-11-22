@@ -22,4 +22,4 @@ requireDir("./src/models");
 // recebendo todas as requisições e enviando para routes.js
 app.use("/api", require("./src/routes"));
 
-app.listen(3001);
+app.listen(process.env.PORT || 3001);
